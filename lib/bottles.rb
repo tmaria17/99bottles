@@ -1,3 +1,4 @@
+require 'pry'
 class Bottles
 
   def verse(number)
@@ -22,6 +23,12 @@ VERSE
 1 bottle of beer on the wall, 1 bottle of beer.
 Take it down and pass it around, no more bottles of beer on the wall.
     VERSE
+  end
+
+  def verses(first_num, second_num)
+    binding.pry
+    # "#{verse(first_num)} + #{verse(second_num)}"
+    verse(first_num)
   end
   end
 end
